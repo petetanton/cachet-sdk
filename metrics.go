@@ -137,6 +137,17 @@ func (s *MetricsService) Create(m *Metric) (*Metric, *Response, error) {
 	return v.Data, resp, err
 }
 
+// Update a metric.
+//
+// Docs: this is not documented in the API docs but is supported
+func (s *MetricsService) Update(id int, m *Metric) (*Metric, *Response, error) {
+	u := fmt.Sprintf("api/v1/metrics/%d", id)
+	v := new(metricAPIResponse)
+
+	resp, err := s.client.Call("PUT", u, m, v)
+	return v.Data, resp, err
+}
+
 // Delete a metric.
 //
 // Docs: https://docs.cachethq.io/reference#delete-a-metric
