@@ -44,13 +44,13 @@ type Metric struct {
 	Suffix          string `json:"suffix,omitempty"`
 	Description     string `json:"description,omitempty"`
 	DefaultValue    int    `json:"default_value"`
-	CalcType        int    `json:"calc_type,omitempty"`
-	DisplayChart    bool   `json:"display_chart,omitempty"`
+	CalcType        int    `json:"calc_type"`
+	DisplayChart    bool   `json:"display_chart"`
 	Places          int    `json:"places,omitempty"`
-	DefaultView     int    `json:"default_view,omitempty"`
+	DefaultView     int    `json:"default_view"`
 	Threshold       int    `json:"threshold,omitempty"`
 	Order           int    `json:"order,omitempty"`
-	Visible         int    `json:"visible,omitemtpy"`
+	Visible         int    `json:"visible"`
 	CreatedAt       string `json:"created_at,omitempty"`
 	UpdatedAt       string `json:"updated_at,omitempty"`
 	DefaultViewName string `json:"default_view_name,omitempty"`
