@@ -54,6 +54,7 @@ type Metric struct {
 	CreatedAt       string `json:"created_at,omitempty"`
 	UpdatedAt       string `json:"updated_at,omitempty"`
 	DefaultViewName string `json:"default_view_name,omitempty"`
+	GroupID         int    `json:"group_id,omitempty"`
 }
 
 // Point is a single point in a Metric
