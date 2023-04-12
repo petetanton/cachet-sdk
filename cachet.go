@@ -33,6 +33,7 @@ type Client struct {
 	Incidents       *IncidentsService
 	IncidentUpdates *IncidentUpdatesService
 	Metrics         *MetricsService
+	MetricGroups    *MetricGroupsService
 	Schedules       *SchedulesService
 	Subscribers     *SubscribersService
 	Subscriptions   *SubscriptionsService
@@ -101,6 +102,7 @@ func NewClient(instance string, httpClient *http.Client) (*Client, error) {
 	c.Incidents = &IncidentsService{client: c}
 	c.IncidentUpdates = &IncidentUpdatesService{client: c}
 	c.Metrics = &MetricsService{client: c}
+	c.MetricGroups = &MetricGroupsService{client: c}
 	c.Schedules = &SchedulesService{client: c}
 	c.Subscribers = &SubscribersService{client: c}
 	c.Subscriptions = &SubscriptionsService{client: c}
