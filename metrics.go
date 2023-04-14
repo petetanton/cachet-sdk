@@ -49,7 +49,7 @@ type Metric struct {
 	Places          int    `json:"places,omitempty"`
 	DefaultView     int    `json:"default_view"`
 	Threshold       int    `json:"threshold,omitempty"`
-	Order           int    `json:"order,omitempty"`
+	Order           int    `json:"order"`
 	Visible         int    `json:"visible"`
 	CreatedAt       string `json:"created_at,omitempty"`
 	UpdatedAt       string `json:"updated_at,omitempty"`
