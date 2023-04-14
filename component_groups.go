@@ -21,7 +21,7 @@ type ComponentGroup struct {
 	ID                      int         `json:"id,omitempty"`
 	Name                    string      `json:"name,omitempty"`
 	Order                   int         `json:"order,omitempty"`
-	Collapsed               int         `json:"collapsed,omitempty"`
+	Collapsed               int         `json:"collapsed"`
 	Visible                 int         `json:"visible,omitempty"`
 	CreatedAt               string      `json:"created_at,omitempty"`
 	UpdatedAt               string      `json:"updated_at,omitempty"`
